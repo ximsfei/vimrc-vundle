@@ -1,4 +1,81 @@
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+Settings
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+syntax enable
+syntax on
+set cul             " Highlight the screen line of the cursor with CursorLine
+"set cuc             " Highlight the screen column of the cursor with CursorColumn
+set magic
+set shortmess=atI
+autocmd InsertEnter * se cul    "starting Insert mode
+set ruler           " Show the line and column number of the cursor position, separated by a comma.
+set showcmd
+"set whichwrap+=<,>,h,l     " Allow specified keys that move the cursor left/right to move to the
+" previous/next line when the cursor is on the first/last character in the line.
+set scrolloff=3     " Minimal number of screen lines to keep above and below the cursor.
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+set laststatus=2
+
+set autoindent
+set cindent
+set smartindent
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+
+set number
+set relativenumber
+set history=1000
+
+set hlsearch
+set incsearch
+
+set showmatch
+set matchtime=1
+
+set nows                    " nowrapscan
+set noeb                    " noerrorbells
+set novb                    " novisualbell
+set nobackup
+set noswapfile
+
+set langmenu=zh_CN.UTF-8
+set helplang=cn
+
+set cmdheight=2
+set completeopt=preview,menu
+
+"set foldenable
+"set foldcolumn=0
+"set foldmethod=indent
+"set foldlevel=3
+"set foldopen-=search        " don't open folds when you search into them
+"set foldopen-=undo          " don't open folds when you undo stuff
+"set foldclose=all
+"nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+
+set confirm
+set ignorecase smartcase
+
+set linespace=0
+set wildmenu
+set backspace=2
+
+"set mouse=a
+set selection=exclusive
+"set selectmode=mouse,key
+
+set report=0
+set fillchars=vert:\ ,stl:\ ,stlnc:\
+set iskeyword+=_,$,@,%,#,-
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+Settings end
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 Vundle.vim
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 set nocompatible              " be iMproved, required

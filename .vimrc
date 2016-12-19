@@ -1,6 +1,6 @@
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Settings
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 syntax on
 set cul             " Highlight the screen line of the cursor with CursorLine
@@ -71,24 +71,24 @@ set selection=exclusive
 set report=0
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 set iskeyword+=_,$,@,%,#,-
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Settings end
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " keyboard commands
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <F2> :Tlist<CR>
 imap <F2> <ESC> :Tlist<CR>
 map <F3> :NERDTreeToggle<CR>
 imap <F3> <ESC> :NERDTreeToggle<CR>
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " keyboard commands end
-“”””””””””””””””””””””””””””””””””””””””””””””””””””””””"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tag list (ctags)
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let Tlist_Auto_Open = 0
 let Tlist_Auto_Update = 1
 let Tlist_Hightlight_Tag_On_BufEnter = 1
@@ -103,13 +103,13 @@ let Tlist_Use_Right_Window = 0
 
 "set tags=tags
 "set autochdir
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tag list (ctags) end
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd StdinReadPre * let s:std_in=1
 autocmd vimenter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -117,13 +117,13 @@ let NERDTreeWinPos = 'right'
 
 set termencoding=utf-8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree end
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle.vim
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -147,18 +147,18 @@ Plugin ‘taglist.vim’
 Plugin ‘winmanager’
 
 " Git plugin not hosted on GitHub
-“”Plugin 'git://git.wincent.com/command-t.git'
+""Plugin 'git://git.wincent.com/command-t.git'
 
 " git repos on your local machine (i.e. when working on your own plugin)
-“”Plugin 'file:///home/gmarik/path/to/plugin'
+""Plugin 'file:///home/gmarik/path/to/plugin'
 
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-“”Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+""Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
-“”Plugin 'ascenator/L9', {'name': 'newL9'}
+""Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -174,6 +174,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle.vim end
-“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""

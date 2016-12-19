@@ -1,5 +1,5 @@
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
-Settings
+" Settings
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 syntax enable
 syntax on
@@ -72,11 +72,41 @@ set report=0
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 set iskeyword+=_,$,@,%,#,-
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
-Settings end
+" Settings end
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
-Vundle.vim
+" keyboard commands
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+map <F2> :Tlist<CR>
+imap <F2> <ESC> :Tlist<CR>
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+" keyboard commands end
+“”””””””””””””””””””””””””””””””””””””””””””””””””””””””"
+
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+" Tag list (ctags)
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+let Tlist_Auto_Open = 0
+let Tlist_Auto_Update = 1
+let Tlist_Hightlight_Tag_On_BufEnter = 1
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let Tlist_Sort_Type = "name"
+let Tlist_Show_One_File = 1
+let Tlist_Compart_Format = 1
+let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Enable_Fold_Column = 0
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 0
+
+"set tags=tags
+"set autochdir
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+" Tag list (ctags) end
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+" Vundle.vim
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -129,5 +159,5 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
-Vundle.vim end
+" Vundle.vim end
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””

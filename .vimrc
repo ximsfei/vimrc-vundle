@@ -139,12 +139,12 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin ‘ximsfei/cscope_maps’
-Plugin ‘scrooloose/nerdtree’
+Plugin 'ximsfei/cscope_maps'
+Plugin 'scrooloose/nerdtree'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
-Plugin ‘taglist.vim’
-Plugin ‘winmanager’
+Plugin 'taglist.vim'
+Plugin 'winmanager'
 
 " Git plugin not hosted on GitHub
 ""Plugin 'git://git.wincent.com/command-t.git'

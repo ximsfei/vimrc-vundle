@@ -80,6 +80,8 @@ set iskeyword+=_,$,@,%,#,-
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 map <F2> :Tlist<CR>
 imap <F2> <ESC> :Tlist<CR>
+map <F3> :NERDTreeToggle<CR>
+imap <F3> <ESC> :NERDTreeToggle<CR>
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 " keyboard commands end
 “”””””””””””””””””””””””””””””””””””””””””””””””””””””””"
@@ -103,6 +105,20 @@ let Tlist_Use_Right_Window = 0
 "set autochdir
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 " Tag list (ctags) end
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+" NERDTree
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+autocmd StdinReadPre * let s:std_in=1
+autocmd vimenter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let NERDTreeWinPos = 'right'
+
+set termencoding=utf-8
+set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+“””””””””””””””””””””””””””””””””””””””””””””””””””””””””
+" NERDTree end
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””
 
 “””””””””””””””””””””””””””””””””””””””””””””””””””””””””

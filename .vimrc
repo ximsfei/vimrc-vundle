@@ -87,6 +87,14 @@ imap <F3> <ESC> :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" keyboard commands
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_markdown_folding_disabled = 1 " Disable the folding configuration.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" keyboard commands end
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tag list (ctags)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let Tlist_Auto_Open = 0
@@ -141,6 +149,8 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'ximsfei/cscope_maps'
 Plugin 'scrooloose/nerdtree'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'taglist.vim'

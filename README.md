@@ -28,12 +28,14 @@
 
     [Shougo/neocomplete](https://github.com/Shougo/neocomplete.vim)
 
-    *在Ubuntu中使用，确定安装了一下任何一个包*
+    *在Ubuntu中使用, 确定安装了一下任何一个包*
 
     > vim-nox
     > vim-gtk
     > vim-gnome
     > vim-athena
+
+    *在MacOS中使用, 可以安装[MacVim](https://github.com/zhaocai/macvim), 也可以安装vim --with-lua. MacVim依赖XCode.app*
 
 * example
 
@@ -43,4 +45,14 @@
         $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
         $ vim
           :PluginInstall
-        $ sudo apt-get install vim-nox
+
+  * Ubuntu中安装vim-nox
+
+            $ sudo apt-get install vim-nox
+  * Mac OS中安装[MacVim](https://github.com/zhaocai/macvim)
+
+            $ brew install macvim --with-cscope --with-lua
+            $ brew linkapps macvim
+    或者
+
+            $ brew install vim --with-lua

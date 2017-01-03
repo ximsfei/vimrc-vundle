@@ -55,4 +55,4 @@
             $ brew linkapps macvim
     或者
 
-            $ brew install vim --with-lua
+          $ brew install vim --with-lua

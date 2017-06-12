@@ -279,6 +279,9 @@ Plugin 'plasticboy/vim-markdown'
 " auto complete
 Plugin 'Shougo/neocomplete.vim'
 
+" kotlin support
+Plugin 'udalov/kotlin-vim'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'taglist.vim'
 Plugin 'winmanager'
